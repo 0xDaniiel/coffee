@@ -18,16 +18,19 @@ const About = () => {
       <section className="flex-1 text-[#220404] space-y-4">
         <h1 className="font-bold text-3xl">Discover Coffee Borcolle</h1>
         <p className="text-lg">Elevating Your Coffee Experience</p>
-        <p>
+        <p className="text-base">
           At Coffee Borcelle, we're on a mission to redefine your coffee
           moments. Our carefully curated selection of premium beans, sourced
           from the world's most renowned coffee regions.
         </p>
-        <p>
+        <p className="text-base py-1 ">
           With expert craftsmanship and a commitment to quality, join us in
           savoring the art of coffee, one cup at a time.
         </p>
-        <Button>Read More</Button>
+
+        <Button className="bg-[#2F1F14] text-white rounded-sm">
+          Read More
+        </Button>
       </section>
     </div>
   );
