@@ -27,9 +27,9 @@ const Hero = () => {
   const pathname = usePathname();
 
   return (
-    <div className="relative w-full h-[500px] p-4 bg-cover bg-center bg-[url('/images/bg-header.svg')]">
+    <div className="relative w-full h-[500px] p-4 bg-cover bg-center bg-[url('/images/header-bg.svg')]">
       {/* Header: Centered Logo and Nav */}
-      <section className="flex flex-ol items-center gap-3">
+      <section className="flex items-center gap-3">
         <Image
           src="/images/logo.svg"
           alt="logo"
@@ -56,9 +56,11 @@ const Hero = () => {
       </section>
 
       {/* Hero Text */}
-      <section className="text-white flex flex-col items-center justify-center text-center mt-12 space-y-4">
-        <p className={`${pompiere.className} text-5xl`}>Coffee Makes Mood</p>
-        <p className={`${galada.className} font-bold text-3xl max-w-xl`}>
+      <section className="text-white flex flex-col ml-44 mt-12 space-y-4">
+        <p className={`${pompiere.className} text-7xl w-full max-w-xl`}>
+          Coffee Makes Mood
+        </p>
+        <p className={`${galada.className} text-xl w-full max-w-xl`}>
           "Indulge in Every Sip: Experience the Richness of Coffee!"
         </p>
       </section>
