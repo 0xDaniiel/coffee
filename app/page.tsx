@@ -6,10 +6,15 @@ import Reviews from "@/components/Reviews";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <About />
-      <Reviews />
-      <Footer />
+      <div className="desktopContent">
+        <Hero />
+        <About />
+        <Reviews />
+        <Footer />
+      </div>
+      <div className="mobileMessage">
+        <p>This content is not available on mobile.</p>
+      </div>
     </div>
   );
 }

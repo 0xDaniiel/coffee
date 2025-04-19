@@ -120,3 +120,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Global styles */
+
+.desktopContent {
+  display: block;
+}
+
+.mobileMessage {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .desktopContent {
+    display: none;
+  }
+
+  .mobileMessage {
+    display: block;
+  }
+}
