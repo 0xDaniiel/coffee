@@ -17,9 +17,10 @@ const pompiere = Pompiere({
 
 const links = [
   { name: "Home", href: "/", id: 1 },
-  { name: "About", href: "/discover", id: 2 },
-  { name: "Reviews", href: "/reviews", id: 3 },
-  { name: "Contact", href: "/contact", id: 4 },
+  { name: "About Us", href: "/#about", id: 2 },
+  { name: "Features", href: "#", id: 3 },
+  { name: "Purchase", href: "#", id: 4 },
+  { name: "Contact", href: "/#contact", id: 5 },
 ];
 
 const Hero = () => {
@@ -32,8 +33,8 @@ const Hero = () => {
         <Image
           src="/images/logo.svg"
           alt="logo"
-          width={250}
-          height={250}
+          width={300}
+          height={300}
           className="ml-10"
         />
 
@@ -42,10 +43,10 @@ const Hero = () => {
             <Link
               href={link.href}
               key={link.id}
-              className={`px-4 py-1 rounded-sm transition-all duration-300 ${
+              className={`px-4 py-1 rounded-sm transition-all duration-300 flex items-center justify-center ${
                 pathname === link.href
-                  ? "bg-white text-[#6F4436] font-semibold"
-                  : "text-white hover:bg-white hover:text-[#6F4436]"
+                  ? "bg-white text-[#6F4436] font-semibold h-full py-3" // Ensure it takes full height
+                  : "text-white hover:bg-white hover:text-[#6F4436] py-3"
               }`}
             >
               {link.name}
