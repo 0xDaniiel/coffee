@@ -56,12 +56,12 @@ const Hero = () => {
       </section>
 
       {/* Hero Text */}
-      <section className="text-white flex flex-col ml-44 mt-12 space-y-4">
+      <section className="text-white flex flex-col ml-44 mt-8 space-y-4">
         <p className={`${pompiere.className} text-7xl w-full max-w-xl`}>
           Coffee Makes Mood
         </p>
         <p className={`${galada.className} text-xl w-full max-w-xl`}>
-          "Indulge in Every Sip: Experience the Richness of Coffee!"
+          "Indulge in Every Sip: Experience the Richness of Coffee&quot;"
         </p>
       </section>
     </div>
