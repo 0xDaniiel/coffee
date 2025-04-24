@@ -28,7 +28,7 @@ const Reviews = () => {
   return (
     <div className="bg-[#655546] text-center text-white p-10" id="reviews">
       <section className="flex items-center justify-center gap-1">
-        <h1 className="font-bold text-3xl text-center">Reviews</h1>
+        <h1 className="font-bold text-5xl text-center">Reviews</h1>
         <Image
           src="images/reviews-cup.svg"
           alt="coffee-beans"
@@ -42,7 +42,7 @@ const Reviews = () => {
         {testimonials.map((testimonial, index) => (
           <Card
             key={index}
-            className="bg-[#DBBCA1] border-none px-6 py-4 w-[350px] shadow-md rounded-lg flex flex-col justify-between"
+            className="bg-[#DBBCA1] border-none px-6 py-4 w-[350px] shadow-lg rounded-lg flex flex-col justify-between"
           >
             <CardContent>
               <p className="text-base text-gray-800">{testimonial.text}</p>
